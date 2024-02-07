@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="../style.css" />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+            screens: {
+              fd: [{ max: "320px" }],
+              sm: "576px",
+              md: "768px",
+              lg: "992px",
+              xl: "1200px",
+              "2xl": "1400px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <section>
+      <div class="h-[100vh] flex justify-center items-center w-full">
+        <div class="grid grid-cols-2 h-full border bg-center bg-cover bg-no-repeat">
+          <div><h1>hh</h1></div>
+          <div class="h-[100vh] border">
+            <img
+              class="h-[100%] w-full"
+              src="../Images/housecap.svg"
+              alt="picture of hands holding heart cap and house "
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>
