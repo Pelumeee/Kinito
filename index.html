@@ -3,7 +3,7 @@
         <head>
                 <meta charset="UTF-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+                <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
                 <link rel="stylesheet" href="style.css" />
         </head>
         <body class="">
@@ -37,8 +37,9 @@
                                                         <br />That's why we're here to provide you with the peace of mind.
                                                 </p>
                                                 <div class="flex w-[368px] h-[120px] px-4 bg-[#087A4D] rounded-[12px] text-white items-center">
-                                                        <div class="flex items-center h-[90px] w-[90px] mr-6 bg-[#045F3B] rounded-lg hover:border-emerald-300 border-transparent border-2 cursor-pointer">
-                                                                <img src="/Images/Present.svg" alt="" class="h-[80px] w-[80px]" />
+                                                        <div id="giftsBox" class="flex items-center justify-center h-[90px] w-[90px] mr-6 bg-[#045F3B] rounded-lg cursor-pointer transition duration-150 ease-out">
+                                                                <i class="material-symbols-rounded text-[4.5rem]"> featured_seasonal_and_gifts </i>
+                                                                <!-- <img src="/Images/Present.svg" alt="" class="h-[80px] w-[80px]" /> -->
                                                         </div>
                                                         <div class="h-[37] w-[130]">
                                                                 <h3 class="text-[16px] font-semibold leading-[19.2px]">New Products</h3>
@@ -47,33 +48,49 @@
                                                 </div>
                                         </div>
                                         <div class="flex space-x-2 ml-10">
-                                                <div class="h-[984px] w-[184px] rounded-[80px] border-[#fefefe] border-l border-r overflow-hidden flex flex-col items-center">
-                                                        <img src="/Images/Aliza.png" alt="" class="h-[120px] w-[120px]" />
-                                                        <img src="/Images/Claudia.png" alt="" class="h-[120px] w-[120px]" />
-                                                        <img src="/Images/Collin.png" alt="" class="h-[120px] w-[120px]" />
-                                                        <img src="/Images/Steve.png" alt="" class="h-[120px] w-[120px]" />
-                                                        <img src="/Images/Blair.png" alt="" class="h-[120px] w-[120px]" />
-                                                        <img src="/Images/Gael.png" alt="" class="h-[120px] w-[120px]" />
-                                                        <img src="/Images/Milo.png" alt="" class="h-[120px] w-[120px]" />
-                                                        <img src="/Images/Myra.png" alt="" class="h-[120px] w-[120px]" />
-                                                        <img src="/Images/Blair.png" alt="" class="h-[120px] w-[120px]" />
+                                                <div class="logos scroller" data-direction="down" data-speed="fast">
+                                                        <div class="scroller__inner">
+                                                                <img src="/Images/Alexander.png" alt="" class="h-[120px] w-[120px]" />
+                                                                <img src="/Images/Aliza.png" alt="" class="h-[120px] w-[120px]" />
+                                                                <img src="/Images/Alvin.png" alt="" class="h-[120px] w-[120px]" />
+                                                                <img src="/Images/Angie.png" alt="" class="h-[120px] w-[120px]" />
+                                                                <img src="/Images/Arjun.png" alt="" class="h-[120px] w-[120px]" />
+                                                                <img src="/Images/Blair.png" alt="" class="h-[120px] w-[120px]" />
+                                                                <img src="/Images/Claudia.png" alt="" class="h-[120px] w-[120px]" />
+                                                                <img src="/Images/Collin.png" alt="" class="h-[120px] w-[120px]" />
+                                                                <img src="/Images/Ed.png" alt="" class="h-[120px] w-[120px]" />
+                                                                <img src="/Images/Effie.png" alt="" class="h-[120px] w-[120px]" />
+                                                                <img src="/Images/Eliot.png" alt="" class="h-[120px] w-[120px]" />
+                                                                <img src="/Images/Fabian.png" alt="" class="h-[120px] w-[120px]" />
+                                                                <img src="/Images/Gael.png" alt="" class="h-[120px] w-[120px]" />
+                                                                <img src="/Images/Gerard.png" alt="" class="h-[120px] w-[120px]" />
+                                                                <img src="/Images/Effie.png" alt="" class="h-[120px] w-[120px]" />
+                                                        </div>
                                                 </div>
-                                                <div class="h-[984px] w-[184px] rounded-[80px] border-[#fefefe] border-l border-r overflow-hidden flex flex-col items-center">
-                                                        <img src="/Images/Myra.png" alt="" class="h-[120px] w-[120px]" />
-                                                        <img src="/Images/Maribel (1).png" alt="" class="h-[120px] w-[120px]" />
-                                                        <img src="/Images/Blair.png" alt="" class="h-[120px] w-[120px]" />
-                                                        <img src="/Images/Lara.png" alt="" class="h-[120px] w-[120px]" />
-                                                        <img src="/Images/Leo.png" alt="" class="h-[120px] w-[120px]" />
-                                                        <img src="/Images/Claudia.png" alt="" class="h-[120px] w-[120px]" />
-                                                        <img src="/Images/Ivan.png" alt="" class="h-[120px] w-[120px]" />
-                                                        <img src="/Images/Steve.png" alt="" class="h-[120px] w-[120px]" />
-                                                        <img src="/Images/Tori.png" alt="" class="h-[120px] w-[120px]" />
+                                                <div class="logos scroller" data-direction="up" data-speed="fast">
+                                                        <div class="scroller__inner">
+                                                                <img src="/Images/Hasan.png" alt="" class="h-[120px] w-[120px]" />
+                                                                <img src="/Images/Helena.png" alt="" class="h-[120px] w-[120px]" />
+                                                                <img src="/Images/Ivan.png" alt="" class="h-[120px] w-[120px]" />
+                                                                <img src="/Images/Katina.png" alt="" class="h-[120px] w-[120px]" />
+                                                                <img src="/Images/Lara.png" alt="" class="h-[120px] w-[120px]" />
+                                                                <img src="/Images/Leo.png" alt="" class="h-[120px] w-[120px]" />
+                                                                <img src="/Images/Maribel.png" alt="" class="h-[120px] w-[120px]" />
+                                                                <img src="/Images/Milo.png" alt="" class="h-[120px] w-[120px]" />
+                                                                <img src="/Images/Myra.png" alt="" class="h-[120px] w-[120px]" />
+                                                                <img src="/Images/Narul.png" alt="" class="h-[120px] w-[120px]" />
+                                                                <img src="/Images/Norah.png" alt="" class="h-[120px] w-[120px]" />
+                                                                <img src="/Images/Oliver.png" alt="" class="h-[120px] w-[120px]" />
+                                                                <img src="/Images/Rahul.png" alt="" class="h-[120px] w-[120px]" />
+                                                                <img src="/Images/Renato.png" alt="" class="h-[120px] w-[120px]" />
+                                                                <img src="/Images/Tori.png" alt="" class="h-[120px] w-[120px]" />
+                                                        </div>
                                                 </div>
                                         </div>
                                 </div>
                         </section>
                         <!-- =============== Products Section ========== -->
-                        <section class="flex flex-col items-center mb-12 px-40 space-y-9">
+                        <section class="flex flex-col items-center my-12 px-40 space-y-9">
                                 <h2 class="text-[28px] font-semibold leading-[24px] text-[ #02311E]">Our Products</h2>
                                 <div class="h-[1024px] w-[1080px] flex flex-col justify-between">
                                         <div class="flex items-center justify-between w-full h-[500px] bg-[#F4F9F7] p-10 rounded-[24px]">
@@ -83,7 +100,9 @@
                                                                 Protect your vehicle and yourself with our comprehensive auto insurance coverage. Whether you're driving to work, running errands, or embarking on a road trip, we'll make sure you're
                                                                 covered every mile of the way.
                                                         </p>
-                                                        <button class="bg-[#00BA70] w-[155px] h-[43px] rounded-[24px] px-[32] py-[12px] text-[#F4F9F7] text-[16px] font-medium leading-[19.20px]">Learn more</button>
+                                                        <a href="/carInsurancePage/index.html"
+                                                                ><button class="bg-[#00BA70] w-[155px] h-[43px] rounded-[24px] px-[32] py-[12px] text-[#F4F9F7] text-[16px] font-medium leading-[19.20px]">Learn more</button></a
+                                                        >
                                                 </div>
 
                                                 <img src="../Images/carInsurance.jpg" alt="" class="h-[420px] w-[596px] rounded-[24px]" />
@@ -97,7 +116,7 @@
                                                                 Whether you're traveling for business or pleasure, our travel insurance policies provide peace of mind and protection against unexpected travel disruptions, medical emergencies, and
                                                                 more.
                                                         </p>
-                                                        <button class="bg-[#00BA70] w-[155px] h-[43px] rounded-[24px] px-[32] py-[12px] text-[#F4F9F7] text-[16px] font-medium leading-[19.20px]">Learn more</button>
+                                                        <a href="/travelInsurancePage/"><button class="bg-[#00BA70] w-[155px] h-[43px] rounded-[24px] px-[32] py-[12px] text-[#F4F9F7] text-[16px] font-medium leading-[19.20px]">Learn more</button></a>
                                                 </div>
                                         </div>
                                 </div>
@@ -168,6 +187,33 @@
                                         },
                                 },
                         };
+                        const giftBox = document.querySelector("#giftsBox");
+                        function lightGiftBox() {
+                                giftBox.classList.toggle("active");
+                        }
+                        setInterval(lightGiftBox, 1500);
+                        const scrollers = document.querySelectorAll(".scroller");
+                        function addAnimation() {
+                                scrollers.forEach((scroller) => {
+                                        scroller.setAttribute("data-animated", true);
+                                        const scrollerInner = scroller.querySelector(".scroller__inner");
+                                        const scrollerContent = Array.from(scrollerInner.children);
+                                        scrollerContent.forEach((item) => {
+                                                const duplicatedItem = item.cloneNode(true);
+                                                duplicatedItem.setAttribute("aria-hidden", true);
+                                                scrollerInner.appendChild(duplicatedItem);
+                                        });
+                                });
+                        }
+                        addAnimation();
+                        function swapDataDirection() {
+                                scrollers.forEach((element) => {
+                                        const currentDirection = element.getAttribute("data-direction");
+                                        const newDirection = currentDirection === "up" ? "down" : "up";
+                                        element.setAttribute("data-direction", newDirection);
+                                });
+                        }
+                        setInterval(swapDataDirection, 10000);
                 </script>
         </body>
 </html>

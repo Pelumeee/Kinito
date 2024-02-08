@@ -8,6 +8,55 @@
 body {
         font-family: "Tomorrow", sans-serif;
 }
+
+.logos {
+        height: 984px;
+        width: 184px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-left: 1px solid #f9f3f3;
+        border-right: 1px solid #f9f3f3;
+        border-radius: 80px;
+        overflow: hidden;
+        white-space: nowrap;
+}
+
+.scroller__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: max-content;
+        flex-wrap: nowrap;
+        animation: scroll var(--_animation-duration, 40s) var(--_animation-direction, forwards) linear infinite;
+}
+
+.scroller[data-direction="up"] {
+        --_animation-direction: reverse;
+}
+
+.scroller[data-direction="down"] {
+        --_animation-direction: forwards;
+}
+
+.scroller[data-speed="fast"] {
+        --_animation-duration: 15s;
+}
+
+.scroller[data-speed="slow"] {
+        --_animation-duration: 60s;
+}
+@keyframes scroll {
+        to {
+                transform: translateY(calc(-50% - 0.5rem));
+        }
+}
+.active {
+        border: 1px solid #06e68d;
+        color: #06e68d;
+        padding: 5px 10px 13px 10px;
+}
+
 ::-webkit-scrollbar {
         width: 5px;
 }
