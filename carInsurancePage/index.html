@@ -11,24 +11,24 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: "#da373d",
-              },
-              screens: {
-                fd: [{ max: "320px" }],
-                sm: "576px",
-                md: "768px",
-                lg: "992px",
-                xl: "1200px",
-                "2xl": "1400px",
-              },
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+            screens: {
+              fd: [{ max: "320px" }],
+              sm: "576px",
+              md: "768px",
+              lg: "992px",
+              xl: "1200px",
+              "2xl": "1400px",
             },
           },
-        };
-      </script>
+        },
+      };
+    </script>
   </head>
   <body class="">
     <div class="container max-w-[1440px]h-[80px] mx-auto bg-white">
@@ -204,104 +204,254 @@
         id="modal"
         class="hidden justify-center items-center fixed z-[1000] left-0 top-0 w-[100%] h-[100%] bg-[rgba(0,0,0,0.4)] overflow-auto"
       >
-        <div
-          class="bg-[#fefefe] m-[15% auto] p-20px border border-[#888] w-[80%]"
-        >
-          <span
-            class="close cursor-pointer text-[#aaaaaa] font-bold text-[28px] float-right"
-            >&times;</span
-          >
-          <form
-            id="regForm"
-            class="m-[100px auto] p-[40px] w-[70%]"
-          >
-            <h1>Register:</h1>
+        <div class="bg-[#fefefe] m-[15% auto] p-20px rounded-lg w-[50%]">
+          <div class="w-[95%] py-1">
+            <span
+              class="close cursor-pointer text-[#aaaaaa] font-bold text-[28px] float-right"
+              >&times;</span
+            >
+          </div>
+          <form id="regForm" class="p-[40px] w-full">
             <!-- One "tab" for each step in the form: -->
-            <div class="tab hidden">
-              Name:
-              <p>
-                <input
-                  placeholder="First name..."
-                  oninput="this.className = ''"
-                  name="fname"
-                />
-              </p>
-              <p>
-                <input
-                  placeholder="Last name..."
-                  oninput="this.className = ''"
-                  name="lname"
-                />
-              </p>
+
+            <!-- first step -->
+            <div class="tab hidden w-full">
+              <div class="mb-8">
+                <h1 class="text-2xl font-bold text-[#191C22]">
+                  Let's Find Your Perfect Fit
+                </h1>
+                <p class="text-[#667085]">
+                  Pick a path to your solution wonderland
+                </p>
+              </div>
+              <div class="flex justify-center items-center flex-col w-full">
+                <small
+                  class="w-full mb-4 border border-[#ECF0F6] py-3 flex justify-center items-center rounded-md"
+                >
+                  <div class="w-[95%]">
+                    <input
+                      oninput="this.className = 'Schengen'"
+                      name="carInsurance"
+                      type="radio"
+                    />
+                    <label for="carInsurance" class="text-[#9CA3AF] pl-2"
+                      >Schengen</label
+                    >
+                  </div>
+                </small>
+                <small
+                  class="w-full mb-4 border border-[#ECF0F6] py-3 flex justify-center items-center rounded-md"
+                >
+                  <div class="w-[95%]">
+                    <input
+                      oninput="this.className = 'Worldwide'"
+                      name="carInsurance"
+                      type="radio"
+                    />
+                    <label for="carInsurance" class="text-[#9CA3AF] pl-2"
+                      >Worldwide</label
+                    >
+                  </div>
+                </small>
+              </div>
             </div>
-            <div class="tab hidden">
-              Contact Info:
-              <p>
-                <input
-                  placeholder="E-mail..."
-                  oninput="this.className = ''"
-                  name="email"
-                />
-              </p>
-              <p>
-                <input
-                  placeholder="Phone..."
-                  oninput="this.className = ''"
-                  name="phone"
-                />
-              </p>
+
+            <!-- second step -->
+            <div class="tab hidden w-full">
+              <div class="mb-8">
+                <h1 class="text-2xl font-bold text-[#191C22]">Schengen</h1>
+                <p class="text-[#667085]">Fill the form below</p>
+              </div>
+
+              <!-- second step first input box -->
+              <small class="w-full mb-4">
+                <div class="flex justify-center items-start flex-col mb-4">
+                  <label for="" class="text-md font-bold">Destination</label>
+                  <select
+                    name=""
+                    id=""
+                    class="w-full border border-[#E5E7EB] focus:border-none px-4 py-3 mt-2"
+                  >
+                    <option value="">Please select destination</option>
+                    <option value="">Abia</option>
+                    <option value="">Adamawa</option>
+                  </select>
+                </div>
+              </small>
+
+              <!-- second step second input box -->
+              <small class="w-full mb-4">
+                <div class="flex justify-between items-center w-full">
+                  <div
+                    class="flex justify-center items-start flex-col mb-4 w-[48%]"
+                  >
+                    <label for="" class="text-md font-bold"
+                      >Date of birth</label
+                    >
+                    <input
+                      name=""
+                      id=""
+                      type="date"
+                      class="w-full border border-[#E5E7EB] focus:border-none px-4 py-3 mt-2"
+                    />
+                  </div>
+                  <div
+                    class="flex justify-center items-start flex-col mb-4 w-[48%]"
+                  >
+                    <label for="" class="text-md font-bold"
+                      >Period of cover</label
+                    >
+                    <select
+                      name=""
+                      id=""
+                      class="w-full border border-[#E5E7EB] focus:border-none px-4 py-3 mt-2"
+                    >
+                      <option value="">Please select period of cover</option>
+                      <option value="">Abia</option>
+                      <option value="">Adamawa</option>
+                    </select>
+                  </div>
+                </div>
+              </small>
+
+              <!-- second step third input box -->
+              <small class="w-full mb-4">
+                <div class="flex justify-between items-center w-full">
+                  <div
+                    class="flex justify-center items-start flex-col mb-4 w-[48%]"
+                  >
+                    <label for="" class="text-md font-bold"
+                      >Amount payable/premium</label
+                    >
+                    <input
+                      name=""
+                      id=""
+                      type="number"
+                      placeholder="0.00"
+                      class="w-full border border-[#E5E7EB] focus:border-none px-4 py-3 mt-2"
+                    />
+                  </div>
+                  <div
+                    class="flex justify-center items-start flex-col mb-4 w-[48%]"
+                  >
+                    <label for="" class="text-md font-bold"
+                      >Maximum limit of liability (EUR)</label
+                    >
+                    <select
+                      name=""
+                      id=""
+                      class="w-full border border-[#E5E7EB] focus:border-none px-4 py-3 mt-2"
+                    >
+                      <option value="">0.00</option>
+                      <option value="">Abia</option>
+                      <option value="">Adamawa</option>
+                    </select>
+                  </div>
+                </div>
+              </small>
             </div>
-            <div class="tab hidden">
-              Birthday:
-              <p>
-                <input
-                  placeholder="dd"
-                  oninput="this.className = ''"
-                  name="dd"
-                />
-              </p>
-              <p>
-                <input
-                  placeholder="mm"
-                  oninput="this.className = ''"
-                  name="nn"
-                />
-              </p>
-              <p>
-                <input
-                  placeholder="yyyy"
-                  oninput="this.className = ''"
-                  name="yyyy"
-                />
-              </p>
+
+            <!-- third step -->
+            <div class="tab hidden w-full">
+              <div class="mb-8">
+                <h1 class="text-2xl font-bold text-[#191C22]">
+                  Let's Find Your Perfect Fit
+                </h1>
+                <p class="text-[#667085]">
+                  Pick a path to your solution wonderland
+                </p>
+              </div>
+              <div class="flex justify-center items-center flex-col w-full">
+                <small
+                  class="w-full mb-4 border border-[#ECF0F6] py-3 flex justify-center items-center rounded-md"
+                >
+                  <div class="w-[95%]">
+                    <input
+                      oninput="this.className = 'Schengen'"
+                      name="carInsurance"
+                      type="radio"
+                    />
+                    <label for="carInsurance" class="text-[#9CA3AF] pl-2"
+                      >Schengen</label
+                    >
+                  </div>
+                </small>
+                <small
+                  class="w-full mb-4 border border-[#ECF0F6] py-3 flex justify-center items-center rounded-md"
+                >
+                  <div class="w-[95%]">
+                    <input
+                      oninput="this.className = 'Worldwide'"
+                      name="carInsurance"
+                      type="radio"
+                    />
+                    <label for="carInsurance" class="text-[#9CA3AF] pl-2"
+                      >Worldwide</label
+                    >
+                  </div>
+                </small>
+              </div>
             </div>
-            <div class="tab hidden">
-              Login Info:
-              <p>
-                <input
-                  placeholder="Username..."
-                  oninput="this.className = ''"
-                  name="uname"
-                />
-              </p>
-              <p>
-                <input
-                  placeholder="Password..."
-                  oninput="this.className = ''"
-                  name="pword"
-                  type="password"
-                />
-              </p>
+
+            <!-- fourth step -->
+            <div class="tab hidden w-full">
+              <div class="mb-8">
+                <h1 class="text-2xl font-bold text-[#191C22]">
+                  Let's Find Your Perfect Fit
+                </h1>
+                <p class="text-[#667085]">
+                  Pick a path to your solution wonderland
+                </p>
+              </div>
+              <div class="flex justify-center items-center flex-col w-full">
+                <small
+                  class="w-full mb-4 border border-[#ECF0F6] py-3 flex justify-center items-center rounded-md"
+                >
+                  <div class="w-[95%]">
+                    <input
+                      oninput="this.className = 'Schengen'"
+                      name="carInsurance"
+                      type="radio"
+                    />
+                    <label for="carInsurance" class="text-[#9CA3AF] pl-2"
+                      >Schengen</label
+                    >
+                  </div>
+                </small>
+                <small
+                  class="w-full mb-4 border border-[#ECF0F6] py-3 flex justify-center items-center rounded-md"
+                >
+                  <div class="w-[95%]">
+                    <input
+                      oninput="this.className = 'Worldwide'"
+                      name="carInsurance"
+                      type="radio"
+                    />
+                    <label for="carInsurance" class="text-[#9CA3AF] pl-2"
+                      >Worldwide</label
+                    >
+                  </div>
+                </small>
+              </div>
             </div>
+
+            <!-- button -->
             <div style="overflow: auto">
               <div style="float: right">
-                <button type="button" id="prevBtn"
-                class="px-8 py-3 rounded-full"
-                onclick="nextPrev(-1)">
+                <button
+                  type="button"
+                  id="prevBtn"
+                  class="px-8 py-3 rounded-2xl"
+                  onclick="nextPrev(-1)"
+                >
                   Previous
                 </button>
-                <button type="button" id="nextBtn" 
-                class="bg-[#00BA70] px-8 py-3 rounded-full text-white" onclick="nextPrev(1)">
+                <button
+                  type="button"
+                  id="nextBtn"
+                  class="bg-[#00BA70] px-8 py-3 rounded-2xl text-white ml-4"
+                  onclick="nextPrev(1)"
+                >
                   Next
                 </button>
               </div>
@@ -319,6 +469,6 @@
     </div>
     <!-- modal box -->
 
-<script src="../script.js"></script>
+    <script src="../script.js"></script>
   </body>
 </html>
