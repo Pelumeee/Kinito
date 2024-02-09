@@ -1,257 +1,487 @@
 <!DOCTYPE html>
 <html>
-        <head>
-                <meta charset="UTF-8" />
-                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-                <script src="https://cdn.tailwindcss.com"></script>
-                <script>
-                        tailwind.config = {
-                                theme: {
-                                        extend: {
-                                                colors: {
-                                                        clifford: "#da373d",
-                                                },
-                                                screens: {
-                                                        fd: [{ max: "320px" }],
-                                                        sm: "576px",
-                                                        md: "768px",
-                                                        lg: "992px",
-                                                        xl: "1200px",
-                                                        "2xl": "1400px",
-                                                },
-                                        },
-                                },
-                        };
-                </script>
-                <link rel="stylesheet" href="style.css" />
-        </head>
-        <body class="">
-                <div class="">
-                        <!--================ Nav Section ========== -->
-                        <nav class="flex justify-center items-center py-7 border-b">
-                                <div class="lg:w-[85%] w-[95%] flex justify-between">
-                                        <div>
-                                                <h4 class="text-[16px] font-semibold leading-[16px]">KINITO</h4>
-                                        </div>
-                                        <div>
-                                                <ul class="flex space-x-14">
-                                                        <li>
-                                                                <a href="/index.html" class="text-[16px] font-semibold leading-[16px] text-[#00BA70]">Home</a>
-                                                        </li>
-                                                        <li>
-                                                                <a href="/productPage/product.html" class="text-[16px] font-medium leading-[16px] text-[#7A9289]">Products</a>
-                                                        </li>
-                                                        <li>
-                                                                <a href="" class="text-[16px] font-medium leading-[16px] text-[#7A9289]">Help</a>
-                                                        </li>
-                                                        <li>
-                                                                <a href="/sign-up/signup.html" class="text-white w-[102px] h-[36] px-[20px] py-[10px] bg-[#00BA70] rounded-[24px]">Sign Up</a>
-                                                        </li>
-                                                </ul>
-                                        </div>
-                                </div>
-                        </nav>
-                        <!-- ================= Hero Section ======================= -->
-                        <section class="relative overflow-hidden z-2 flex justify-center">
-                                <div class="w-[1069px] h-[1100] lg:block hidden absolute top-[-70px] left-[-160px] z-10">
-                                        <img src="/Images/Vector.png" alt="" class="h-[1050px]" />
-                                </div>
-                                <div class="flex lg:flex-row flex-col lg:justify-between justify-start items-center lg:mt-4 mt-0 lg:w-[85%] w-[100%]">
-                                        <div class="lg:w-1/2 w-full z-50 h-[464px] lg:mb-48 mb-0 lg:bg-[inherit] bg-[#00BA70] lg:rounded-none rounded-b-3xl lg:py-0 py-6 flex flex-col lg:items-start items-center">
-                                                <h1 class="text-[#FFFFFF] lg:text-[70px] text-[36px] lg:leading-[80px] leading-[43.2px] font-semibold">Protect yourself,<br />your loved ones,<br />and your assets.</h1>
-                                                <p class="mb-8 mt-2 text-[#F3F3F3] lg:text-[20px] text-[12px] lg:leading-[28px] leading-[20px] font-normal">
-                                                        We understand that life is full of unexpected twists and turns.
-                                                        <br />That's why we're here to provide you with the peace of mind.
-                                                </p>
-                                                <div class="flex w-[368px] h-[120px] px-4 bg-[#087A4D] rounded-[12px] text-white items-center">
-                                                        <div id="giftsBox" class="flex items-center justify-center h-[90px] w-[90px] mr-6 bg-[#045F3B] rounded-lg cursor-pointer transition duration-150 ease-out">
-                                                                <!-- <i class="material-symbols-rounded text-[4.5rem]"> featured_seasonal_and_gifts </i> -->
-                                                                <img src="/Images/Icon.svg" alt="" class="h-[75px] w-[75px] illuminate" />
-                                                        </div>
-                                                        <div class="h-[37] w-[130]">
-                                                                <h3 class="text-[16px] font-semibold leading-[19.2px]">New Products</h3>
-                                                                <h2 class="text-[20px] font-medium leading-[24px]">Coming Soon</h2>
-                                                        </div>
-                                                </div>
-                                        </div>
-                                        <div class="lg:w-1/2 w-full flex lg:flex-row flex-col space-x-2 ml-10 bg-[#fefefe] justify-end">
-                                                <div
-                                                        class="scroller lg:h-[984px] h-[84px] lg:w-[184px] w-full flex flex-col items-center border-l-[1px] border-r-[1px] border-[#f9f3f3] rounded-[80px] overflow-hidden whitespace-nowrap"
-                                                        data-direction="up"
-                                                        data-speed="fast"
-                                                >
-                                                        <div class="scroller__inner">
-                                                                <img src="/Images/Alexander.png" alt="" class="h-[120px] w-[120px]" />
-                                                                <img src="/Images/Aliza.png" alt="" class="h-[120px] w-[120px]" />
-                                                                <img src="/Images/Alvin.png" alt="" class="h-[120px] w-[120px]" />
-                                                                <img src="/Images/Angie.png" alt="" class="h-[120px] w-[120px]" />
-                                                                <img src="/Images/Arjun.png" alt="" class="h-[120px] w-[120px]" />
-                                                                <img src="/Images/Blair.png" alt="" class="h-[120px] w-[120px]" />
-                                                                <img src="/Images/Claudia.png" alt="" class="h-[120px] w-[120px]" />
-                                                                <img src="/Images/Collin.png" alt="" class="h-[120px] w-[120px]" />
-                                                                <img src="/Images/Ed.png" alt="" class="h-[120px] w-[120px]" />
-                                                                <img src="/Images/Effie.png" alt="" class="h-[120px] w-[120px]" />
-                                                                <img src="/Images/Eliot.png" alt="" class="h-[120px] w-[120px]" />
-                                                                <img src="/Images/Fabian.png" alt="" class="h-[120px] w-[120px]" />
-                                                                <img src="/Images/Gael.png" alt="" class="h-[120px] w-[120px]" />
-                                                                <img src="/Images/Gerard.png" alt="" class="h-[120px] w-[120px]" />
-                                                                <img src="/Images/Effie.png" alt="" class="h-[120px] w-[120px]" />
-                                                        </div>
-                                                </div>
-                                                <div
-                                                        class="scroller lg:h-[984px] h-[84px] lg:w-[184px] w-full flex flex-col items-center border-l-[1px] border-r-[1px] border-[#f9f3f3] rounded-[80px] overflow-hidden whitespace-nowrap"
-                                                        data-direction="down"
-                                                        data-speed="fast"
-                                                >
-                                                        <div class="scroller__inner">
-                                                                <img src="/Images/Hasan.png" alt="" class="h-[120px] w-[120px]" />
-                                                                <img src="/Images/Helena.png" alt="" class="h-[120px] w-[120px]" />
-                                                                <img src="/Images/Ivan.png" alt="" class="h-[120px] w-[120px]" />
-                                                                <img src="/Images/Katina.png" alt="" class="h-[120px] w-[120px]" />
-                                                                <img src="/Images/Lara.png" alt="" class="h-[120px] w-[120px]" />
-                                                                <img src="/Images/Leo.png" alt="" class="h-[120px] w-[120px]" />
-                                                                <img src="/Images/Maribel.png" alt="" class="h-[120px] w-[120px]" />
-                                                                <img src="/Images/Milo.png" alt="" class="h-[120px] w-[120px]" />
-                                                                <img src="/Images/Myra.png" alt="" class="h-[120px] w-[120px]" />
-                                                                <img src="/Images/Narul.png" alt="" class="h-[120px] w-[120px]" />
-                                                                <img src="/Images/Norah.png" alt="" class="h-[120px] w-[120px]" />
-                                                                <img src="/Images/Oliver.png" alt="" class="h-[120px] w-[120px]" />
-                                                                <img src="/Images/Rahul.png" alt="" class="h-[120px] w-[120px]" />
-                                                                <img src="/Images/Renato.png" alt="" class="h-[120px] w-[120px]" />
-                                                                <img src="/Images/Tori.png" alt="" class="h-[120px] w-[120px]" />
-                                                        </div>
-                                                </div>
-                                        </div>
-                                </div>
-                        </section>
-                        <!-- =============== Products Section ========== -->
-                        <section class="py-16 flex justify-center items-center">
-                                <div class="lg:w-[85%] w-[95%] flex justify-center items-center flex-col">
-                                        <!-- first section -->
-                                        <section class="bg-[#F4F9F7] grid lg:grid-cols-2 grid-cols-1 gap-4 mb-6 py-4 px-6 items-center">
-                                                <div class="">
-                                                        <h1 class="text-2xl font-bold">Car Insurance</h1>
-                                                        <p class="mt-4 mb-8 lg:block hidden">
-                                                                Protect your vehicle and yourself with our comprehensive auto insurance coverage. Whether you're driving to work, running errands, or embarking on a road trip, we'll make sure you're
-                                                                covered every mile of the way.
-                                                        </p>
-                                                        <div class="h-full w-full rounded-md lg:hidden block my-8">
-                                                                <img src="../Images/carInsurance.jpg" alt="a car" class="h-full w-full rounded-md" />
-                                                        </div>
-                                                        <div class="mb-6 flex lg:justify-start justify-center w-full">
-                                                                <a href="/carInsurancePage/index.html" class="bg-[#00BA70] px-8 py-3 rounded-full text-white">Learn more</a>
-                                                        </div>
-                                                </div>
-                                                <div class="h-full w-full rounded-md lg:block hidden">
-                                                        <img src="../Images/carInsurance.jpg" alt="a car" class="h-full w-full rounded-md" />
-                                                </div>
-                                        </section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+            screens: {
+              fd: [{ max: "320px" }],
+              sm: "576px",
+              md: "768px",
+              lg: "992px",
+              xl: "1200px",
+              "2xl": "1400px",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="">
+    <div class="">
+      <!--================ Nav Section ========== -->
+      <nav class="flex justify-center items-center py-7 border-b">
+        <div class="lg:w-[85%] w-[95%] flex justify-between">
+          <div>
+            <h4 class="text-[16px] font-semibold leading-[16px]">KINITO</h4>
+          </div>
+          <div>
+            <ul class="flex space-x-14">
+              <li>
+                <a
+                  href="/index.html"
+                  class="text-[16px] font-semibold leading-[16px] text-[#00BA70]"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/productPage/product.html"
+                  class="text-[16px] font-medium leading-[16px] text-[#7A9289]"
+                  >Products</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-[16px] font-medium leading-[16px] text-[#7A9289]"
+                  >Help</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/sign-up/signup.html"
+                  class="text-white w-[102px] h-[36] px-[20px] py-[10px] bg-[#00BA70] rounded-[24px]"
+                  >Sign Up</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- ================= Hero Section ======================= -->
+      <section class="relative overflow-hidden z-2 flex justify-center">
+        <div
+          class="w-[1069px] h-[1100] lg:block hidden absolute top-[-70px] left-[-160px] z-10"
+        >
+          <img src="/Images/Vector.png" alt="" class="h-[1050px]" />
+        </div>
+        <div
+          class="flex lg:flex-row flex-col lg:justify-between justify-start items-center lg:mt-4 mt-0 lg:w-[85%] w-[100%]"
+        >
+          <div
+            class="lg:w-1/2 w-full z-50 h-[464px] lg:mb-48 mb-0 lg:bg-[inherit] bg-[#00BA70] lg:rounded-none rounded-b-3xl lg:py-0 py-6 flex flex-col lg:items-start items-center"
+          >
+            <h1
+              class="text-[#FFFFFF] lg:text-[70px] text-[36px] lg:leading-[80px] leading-[43.2px] font-semibold"
+            >
+              Protect yourself,<br />your loved ones,<br />and your assets.
+            </h1>
+            <p
+              class="mb-8 mt-2 text-[#F3F3F3] lg:text-[20px] text-[12px] lg:leading-[28px] leading-[20px] font-normal"
+            >
+              We understand that life is full of unexpected twists and turns.
+              <br />That's why we're here to provide you with the peace of mind.
+            </p>
+            <div
+              class="flex w-[368px] h-[120px] px-4 bg-[#087A4D] rounded-[12px] text-white items-center"
+            >
+              <div
+                id="giftsBox"
+                class="flex items-center justify-center h-[90px] w-[90px] mr-6 bg-[#045F3B] rounded-lg cursor-pointer transition duration-150 ease-out"
+              >
+                <!-- <i class="material-symbols-rounded text-[4.5rem]"> featured_seasonal_and_gifts </i> -->
+                <img
+                  src="/Images/Icon.svg"
+                  alt=""
+                  class="h-[75px] w-[75px] illuminate"
+                />
+              </div>
+              <div class="h-[37] w-[130]">
+                <h3 class="text-[16px] font-semibold leading-[19.2px]">
+                  New Products
+                </h3>
+                <h2 class="text-[20px] font-medium leading-[24px]">
+                  Coming Soon
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div
+            class="lg:w-1/2 w-full flex lg:flex-row flex-col space-x-2 ml-10 bg-[#fefefe] justify-end"
+          >
+            <div
+              class="scroller lg:h-[984px] h-[84px] lg:w-[184px] w-full flex flex-col items-center border-l-[1px] border-r-[1px] border-[#f9f3f3] rounded-[80px] overflow-hidden whitespace-nowrap"
+              data-direction="up"
+              data-speed="fast"
+            >
+              <div class="scroller__inner">
+                <img
+                  src="/Images/Alexander.png"
+                  alt=""
+                  class="h-[120px] w-[120px]"
+                />
+                <img
+                  src="/Images/Aliza.png"
+                  alt=""
+                  class="h-[120px] w-[120px]"
+                />
+                <img
+                  src="/Images/Alvin.png"
+                  alt=""
+                  class="h-[120px] w-[120px]"
+                />
+                <img
+                  src="/Images/Angie.png"
+                  alt=""
+                  class="h-[120px] w-[120px]"
+                />
+                <img
+                  src="/Images/Arjun.png"
+                  alt=""
+                  class="h-[120px] w-[120px]"
+                />
+                <img
+                  src="/Images/Blair.png"
+                  alt=""
+                  class="h-[120px] w-[120px]"
+                />
+                <img
+                  src="/Images/Claudia.png"
+                  alt=""
+                  class="h-[120px] w-[120px]"
+                />
+                <img
+                  src="/Images/Collin.png"
+                  alt=""
+                  class="h-[120px] w-[120px]"
+                />
+                <img src="/Images/Ed.png" alt="" class="h-[120px] w-[120px]" />
+                <img
+                  src="/Images/Effie.png"
+                  alt=""
+                  class="h-[120px] w-[120px]"
+                />
+                <img
+                  src="/Images/Eliot.png"
+                  alt=""
+                  class="h-[120px] w-[120px]"
+                />
+                <img
+                  src="/Images/Fabian.png"
+                  alt=""
+                  class="h-[120px] w-[120px]"
+                />
+                <img
+                  src="/Images/Gael.png"
+                  alt=""
+                  class="h-[120px] w-[120px]"
+                />
+                <img
+                  src="/Images/Gerard.png"
+                  alt=""
+                  class="h-[120px] w-[120px]"
+                />
+                <img
+                  src="/Images/Effie.png"
+                  alt=""
+                  class="h-[120px] w-[120px]"
+                />
+              </div>
+            </div>
+            <div
+              class="scroller lg:h-[984px] h-[84px] lg:w-[184px] w-full flex flex-col items-center border-l-[1px] border-r-[1px] border-[#f9f3f3] rounded-[80px] overflow-hidden whitespace-nowrap"
+              data-direction="down"
+              data-speed="fast"
+            >
+              <div class="scroller__inner">
+                <img
+                  src="/Images/Hasan.png"
+                  alt=""
+                  class="h-[120px] w-[120px]"
+                />
+                <img
+                  src="/Images/Helena.png"
+                  alt=""
+                  class="h-[120px] w-[120px]"
+                />
+                <img
+                  src="/Images/Ivan.png"
+                  alt=""
+                  class="h-[120px] w-[120px]"
+                />
+                <img
+                  src="/Images/Katina.png"
+                  alt=""
+                  class="h-[120px] w-[120px]"
+                />
+                <img
+                  src="/Images/Lara.png"
+                  alt=""
+                  class="h-[120px] w-[120px]"
+                />
+                <img src="/Images/Leo.png" alt="" class="h-[120px] w-[120px]" />
+                <img
+                  src="/Images/Maribel.png"
+                  alt=""
+                  class="h-[120px] w-[120px]"
+                />
+                <img
+                  src="/Images/Milo.png"
+                  alt=""
+                  class="h-[120px] w-[120px]"
+                />
+                <img
+                  src="/Images/Myra.png"
+                  alt=""
+                  class="h-[120px] w-[120px]"
+                />
+                <img
+                  src="/Images/Narul.png"
+                  alt=""
+                  class="h-[120px] w-[120px]"
+                />
+                <img
+                  src="/Images/Norah.png"
+                  alt=""
+                  class="h-[120px] w-[120px]"
+                />
+                <img
+                  src="/Images/Oliver.png"
+                  alt=""
+                  class="h-[120px] w-[120px]"
+                />
+                <img
+                  src="/Images/Rahul.png"
+                  alt=""
+                  class="h-[120px] w-[120px]"
+                />
+                <img
+                  src="/Images/Renato.png"
+                  alt=""
+                  class="h-[120px] w-[120px]"
+                />
+                <img
+                  src="/Images/Tori.png"
+                  alt=""
+                  class="h-[120px] w-[120px]"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =============== Products Section ========== -->
+      <section class="py-16 flex justify-center items-center">
+        <div
+          class="lg:w-[85%] w-[95%] flex justify-center items-center flex-col"
+        >
+          <!-- first section -->
+          <section
+            class="bg-[#F4F9F7] grid lg:grid-cols-2 grid-cols-1 gap-4 mb-6 py-4 px-6 items-center w-full"
+          >
+            <div class="">
+              <h1 class="text-2xl font-bold">Car Insurance</h1>
+              <p class="mt-4 mb-8 lg:block hidden">
+                Protect your vehicle and yourself with our comprehensive auto
+                insurance coverage. Whether you're driving to work, running
+                errands, or embarking on a road trip, we'll make sure you're
+                covered every mile of the way.
+              </p>
+              <div class="h-full w-full rounded-md lg:hidden block my-8">
+                <img
+                  src="../Images/carInsurance.jpg"
+                  alt="a car"
+                  class="h-full w-full rounded-md"
+                />
+              </div>
+              <div class="mb-6 flex lg:justify-start justify-center w-full">
+                <a
+                  href="/carInsurancePage/index.html"
+                  class="bg-[#00BA70] px-8 py-3 rounded-full text-white"
+                  >Learn more</a
+                >
+              </div>
+            </div>
+            <div class="h-full w-full rounded-md lg:block hidden">
+              <img
+                src="../Images/carInsurance.jpg"
+                alt="a car"
+                class="h-full w-full rounded-md"
+              />
+            </div>
+          </section>
 
-                                        <!-- second section -->
-                                        <section class="bg-[#F4F9F7] grid lg:grid-cols-2 grid-cols-1 gap-4 py-4 px-6 items-center">
-                                                <div class="h-full w-full rounded-md lg:block hidden">
-                                                        <img src="../Images/travelInsurance.jpg" alt="a plane" class="h-full w-full rounded-md" />
-                                                </div>
-                                                <div class="">
-                                                        <h1 class="text-2xl font-bold">Travel Insurance</h1>
-                                                        <p class="mt-4 mb-8 lg:block hidden">
-                                                                Whether you're traveling for business or pleasure, our travel insurance policies provide peace of mind and protection against unexpected travel disruptions, medical emergencies, and
-                                                                more.
-                                                        </p>
-                                                        <div class="h-full w-full rounded-md lg:hidden block my-8">
-                                                                <img src="../Images/travelInsurance.jpg" alt="a car" class="h-full w-full rounded-md" />
-                                                        </div>
-                                                        <div class="mb-6 flex lg:justify-start justify-center w-full">
-                                                                <a href="/travelInsurancePage/index.html" class="bg-[#00BA70] px-8 py-3 rounded-full text-white">Learn more</a>
-                                                        </div>
-                                                </div>
-                                        </section>
-                                </div>
-                        </section>
-                        <!-- ========== Want to  kmow more ================ -->
-                        <section class="mb-8 flex justify-center">
-                                <div class="py-16 lg:w-[85%] w-[95%] flex items-center justify-center border-b border-t py-6">
-                                        <div class="lg:w-[80%] h-[214px] flex lg:flex-row flex-col items-center justify-between">
-                                                <div class="lg:text-left text-center">
-                                                        <h2 class="text-[28px] font-semibold leading-[34px] text-[#02311E] mb-6">KINITO</h2>
-                                                        <p class="text-[16px] font-normal leading-[28px] text-[#696F7A]">
-                                                                Want to know more about our mobile sales channel <br />
-                                                                designed exclusively for insurance companies and <br />
-                                                                agents? Click “Learn more”.
-                                                        </p>
-                                                </div>
-                                                <div>
-                                                        <button class="bg-[#00BA70] w-[169px] h-[59px] rounded-[40px] px-[39] py-[20px] text-[#F4F9F7] text-[16px] font-medium leading-[19.20px]">Learn more</button>
-                                                </div>
-                                        </div>
-                                </div>
-                        </section>
-                        <!-- ========= Footer ============ -->
-                        <footer class="bg-[#00BA70] py-6 flex flex-col items-center lg:rounded-none rounded-t-2xl">
-                                <div class="lg:py-16 py-6 lg:w-[85%] w-[95%] flex items-center justify-center">
-                                        <div class="lg:w-[80%] flex lg:flex-row flex-col justify-between">
-                                                <div class="h[75px] w-[438px] lg:mb-0 mb-6">
-                                                        <h2 class="text-[16px] font-semibold leading-[19.2px] text-[#E5E5E5] mb-2">KINITO</h2>
-                                                        <p class="text-[14px] font-normal leading-[24px] text-[#E5E5E5]">
-                                                                Revolutionize your insurance business with our Mobile Sales
-                                                                <br />
-                                                                Channel designed for insurance companies and agents.
-                                                        </p>
-                                                </div>
-                                                <div class="flex flex-col">
-                                                        <a class="text-[16px] font-semibold leading-[19.20px] text-[#E5E5E5] mb-2">Products</a>
-                                                        <div>
-                                                                <ul class="flex lg:flex-row flex-col lg:space-x-4">
-                                                                        <li>
-                                                                                <a href="" class="text-[14px] font-normal leading-[24px] text-[#CFDAD6]">Help</a>
-                                                                        </li>
-                                                                        <li>
-                                                                                <a href="" class="text-[14px] font-normal leading-[24px] text-[#CFDAD6]">General</a>
-                                                                        </li>
-                                                                        <li>
-                                                                                <a href="" class="text-[14px] font-normal leading-[24px] text-[#CFDAD6]">Home</a>
-                                                                        </li>
-                                                                </ul>
-                                                        </div>
-                                                </div>
-                                        </div>
-                                </div>
-                                <div class="w-full lg:flex hidden justify-between items-center h-[24px]">
-                                        <div class="w-2/5 h-[1px] bg-[#CFDAD6]"></div>
-                                        <p class="text-[12px] font-normal leading-[24px] text-[#CFDAD6]">Copyright &#169; 2024 Kinito. All rights reserved</p>
-                                        <div class="w-2/5 h-[1px] bg-[#CFDAD6]"></div>
-                                </div>
-                        </footer>
-                </div>
-                <script>
-                        const giftBox = document.querySelector("#giftsBox");
-                        function lightGiftBox() {
-                                giftBox.classList.toggle("active");
-                        }
-                        setInterval(lightGiftBox, 1500);
-                        const scrollers = document.querySelectorAll(".scroller");
-                        function addAnimation() {
-                                scrollers.forEach((scroller) => {
-                                        scroller.setAttribute("data-animated", true);
-                                        const scrollerInner = scroller.querySelector(".scroller__inner");
-                                        const scrollerContent = Array.from(scrollerInner.children);
-                                        scrollerContent.forEach((item) => {
-                                                const duplicatedItem = item.cloneNode(true);
-                                                duplicatedItem.setAttribute("aria-hidden", true);
-                                                scrollerInner.appendChild(duplicatedItem);
-                                        });
-                                });
-                        }
-                        addAnimation();
-                        function swapDataDirection() {
-                                scrollers.forEach((element) => {
-                                        const currentDirection = element.getAttribute("data-direction");
-                                        const newDirection = currentDirection === "up" ? "down" : "up";
-                                        element.setAttribute("data-direction", newDirection);
-                                });
-                        }
-                        setInterval(swapDataDirection, 10000);
-                </script>
-        </body>
+          <!-- second section -->
+          <section
+            class="bg-[#F4F9F7] grid lg:grid-cols-2 grid-cols-1 gap-4 py-4 px-6 items-center w-full"
+          >
+            <div class="h-full w-full rounded-md lg:block hidden">
+              <img
+                src="../Images/travelInsurance.jpg"
+                alt="a plane"
+                class="h-full w-full rounded-md"
+              />
+            </div>
+            <div class="">
+              <h1 class="text-2xl font-bold">Travel Insurance</h1>
+              <p class="mt-4 mb-8 lg:block hidden">
+                Whether you're traveling for business or pleasure, our travel
+                insurance policies provide peace of mind and protection against
+                unexpected travel disruptions, medical emergencies, and more.
+              </p>
+              <div class="h-full w-full rounded-md lg:hidden block my-8">
+                <img
+                  src="../Images/travelInsurance.jpg"
+                  alt="a car"
+                  class="h-full w-full rounded-md"
+                />
+              </div>
+              <div class="mb-6 flex lg:justify-start justify-center w-full">
+                <a
+                  href="/travelInsurancePage/index.html"
+                  class="bg-[#00BA70] px-8 py-3 rounded-full text-white"
+                  >Learn more</a
+                >
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+      <!-- ========== Want to  kmow more ================ -->
+      <section class="mb-8 flex justify-center">
+        <div
+          class="py-16 lg:w-[85%] w-[95%] flex items-center justify-center border-b border-t py-6"
+        >
+          <div
+            class="lg:w-[80%] h-[214px] flex lg:flex-row flex-col items-center justify-between"
+          >
+            <div class="lg:text-left text-center">
+              <h2
+                class="text-[28px] font-semibold leading-[34px] text-[#02311E] mb-6"
+              >
+                KINITO
+              </h2>
+              <p class="text-[16px] font-normal leading-[28px] text-[#696F7A]">
+                Want to know more about our mobile sales channel <br />
+                designed exclusively for insurance companies and <br />
+                agents? Click “Learn more”.
+              </p>
+            </div>
+            <div>
+              <button
+                class="bg-[#00BA70] w-[169px] h-[59px] rounded-[40px] px-[39] py-[20px] text-[#F4F9F7] text-[16px] font-medium leading-[19.20px]"
+              >
+                Learn more
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ========= Footer ============ -->
+      <footer
+        class="bg-[#00BA70] py-6 flex flex-col items-center lg:rounded-none rounded-t-2xl"
+      >
+        <div
+          class="lg:py-16 py-6 lg:w-[85%] w-[95%] flex items-center justify-center"
+        >
+          <div class="lg:w-[80%] flex lg:flex-row flex-col justify-between">
+            <div class="h[75px] w-[438px] lg:mb-0 mb-6">
+              <h2
+                class="text-[16px] font-semibold leading-[19.2px] text-[#E5E5E5] mb-2"
+              >
+                KINITO
+              </h2>
+              <p class="text-[14px] font-normal leading-[24px] text-[#E5E5E5]">
+                Revolutionize your insurance business with our Mobile Sales
+                <br />
+                Channel designed for insurance companies and agents.
+              </p>
+            </div>
+            <div class="flex flex-col">
+              <a
+                class="text-[16px] font-semibold leading-[19.20px] text-[#E5E5E5] mb-2"
+                >Products</a
+              >
+              <div>
+                <ul class="flex lg:flex-row flex-col lg:space-x-4">
+                  <li>
+                    <a
+                      href=""
+                      class="text-[14px] font-normal leading-[24px] text-[#CFDAD6]"
+                      >Help</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="text-[14px] font-normal leading-[24px] text-[#CFDAD6]"
+                      >General</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="text-[14px] font-normal leading-[24px] text-[#CFDAD6]"
+                      >Home</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-full lg:flex hidden justify-between items-center h-[24px]"
+        >
+          <div class="w-2/5 h-[1px] bg-[#CFDAD6]"></div>
+          <p class="text-[12px] font-normal leading-[24px] text-[#CFDAD6]">
+            Copyright &#169; 2024 Kinito. All rights reserved
+          </p>
+          <div class="w-2/5 h-[1px] bg-[#CFDAD6]"></div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      const giftBox = document.querySelector("#giftsBox");
+      function lightGiftBox() {
+        giftBox.classList.toggle("active");
+      }
+      setInterval(lightGiftBox, 1500);
+      const scrollers = document.querySelectorAll(".scroller");
+      function addAnimation() {
+        scrollers.forEach((scroller) => {
+          scroller.setAttribute("data-animated", true);
+          const scrollerInner = scroller.querySelector(".scroller__inner");
+          const scrollerContent = Array.from(scrollerInner.children);
+          scrollerContent.forEach((item) => {
+            const duplicatedItem = item.cloneNode(true);
+            duplicatedItem.setAttribute("aria-hidden", true);
+            scrollerInner.appendChild(duplicatedItem);
+          });
+        });
+      }
+      addAnimation();
+      function swapDataDirection() {
+        scrollers.forEach((element) => {
+          const currentDirection = element.getAttribute("data-direction");
+          const newDirection = currentDirection === "up" ? "down" : "up";
+          element.setAttribute("data-direction", newDirection);
+        });
+      }
+      setInterval(swapDataDirection, 10000);
+    </script>
+  </body>
 </html>
