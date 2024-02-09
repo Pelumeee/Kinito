@@ -56,6 +56,9 @@ body {
         color: #06e68d;
         padding: 5px 10px 13px 10px;
 }
+#giftbox img.illuminate {
+        fill: #06e68d;
+}
 
 ::-webkit-scrollbar {
         width: 5px;
