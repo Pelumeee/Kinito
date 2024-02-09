@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="../style.css" />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+            screens: {
+              fd: [{ max: "320px" }],
+              sm: "576px",
+              md: "768px",
+              lg: "992px",
+              xl: "1200px",
+              "2xl": "1400px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <section>
+      <div class="h-[100vh] flex justify-center items-center w-full border-2">
+        <div
+          class="grid grid-cols-2 gap-0 h-full w-full border bg-center bg-cover bg-no-repeat"
+        >
+          <div class="flex justify-center items-center">
+            <div class="w-[40%] flex justify-center items-center flex-col">
+              <h1 class="text-2xl font-bold mb-2">Sign up for Kinito</h1>
+              <p class="text-sm text-center">
+                Protect what matters most. Sign up now to secure your coverage.
+              </p>
+              <div class="my-5">
+                <a
+                  href=""
+                  class="bg-[#00BA70] px-8 py-3 rounded-full text-white flex justify-center items-center"
+                  ><small class="mr-2"
+                    ><svg
+                      width="15"
+                      height="20"
+                      viewBox="0 0 25 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M24.2973 9.76133C24.2801 9.66742 24.1978 9.6 24.1023 9.6H12.7C12.5895 9.6 12.5 9.68954 12.5 9.8V14.2C12.5 14.3105 12.5895 14.4 12.7 14.4H19.2818C18.2924 17.1942 15.6338 19.2 12.5 19.2C8.5238 19.2 5.3 15.9762 5.3 12C5.3 8.0238 8.5238 4.8 12.5 4.8C14.2676 4.8 15.8816 5.44218 17.134 6.49984C17.215 6.56818 17.3351 6.5649 17.41 6.49L20.5243 3.37569C20.6044 3.29563 20.6022 3.16502 20.5181 3.08925C18.3923 1.17442 15.5863 0 12.5 0C5.873 0 0.5 5.373 0.5 12C0.5 18.627 5.873 24 12.5 24C19.127 24 24.5 18.627 24.5 12C24.5 11.2519 24.4284 10.4774 24.2973 9.76133Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </small>
+                  Sign up with Google</a
+                >
+              </div>
+              <p class="text-sm text-center">
+                By continuing, you acknowledge that you have read and
+                understand, and agree to Kinito Privacy Policy.
+              </p>
+            </div>
+          </div>
+          <div
+            class="h-[100vh] border w-full bg-bottom bg-cover bg-no-repeat bg-[url(/Images/housecap.svg)]"
+          >
+            <!-- <img
+              class="h-[100%] w-full bg-cover"
+              src="../Images/housecap.svg"
+              alt="picture of hands holding heart cap and house"
+            > -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>
