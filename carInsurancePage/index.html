@@ -1,186 +1,488 @@
 <!DOCTYPE html>
 <html>
-        <head>
-                <meta charset="UTF-8" />
-                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-                <link rel="stylesheet" href="../style.css" />
-        </head>
-        <body class="">
-                <div class="">
-                        <!--================ Nav Section ========== -->
-                        <nav class="flex justify-center items-center py-7 border-b">
-                                <div class="lg:w-[85%] w-[95%] flex justify-between">
-                                        <div>
-                                                <h4 class="text-[16px] font-semibold leading-[16px]">KINITO</h4>
-                                        </div>
-                                        <div>
-                                                <ul class="flex space-x-14">
-                                                        <li><a href="/index.html" class="text-[16px] font-semibold leading-[16px] text-[#00BA70]">Home</a></li>
-                                                        <li><a href="/productPage/product.html" class="text-[16px] font-medium leading-[16px] text-[#7A9289]">Products</a></li>
-                                                        <li><a href="" class="text-[16px] font-medium leading-[16px] text-[#7A9289]">Help</a></li>
-                                                        <li>
-                                                                <a href="/sign-up/signup.html" class="text-white w-[102px] h-[36] px-[20px] py-[10px] bg-[#00BA70] rounded-[24px]">Sign Up</a>
-                                                        </li>
-                                                </ul>
-                                        </div>
-                                </div>
-                        </nav>
-                        <!-- ================= Hero Section ======================= -->
-                        <section class="h-[714px] bg-[#EDFCF6] flex flex-col py-20">
-                                <div class="px-10 flex items-center">
-                                        <img src="../Images/arrow_circle_left_FILL0_wght400_GRAD0_opsz24.png" alt="" class="h-[30px] w-[30px] mr-2" />
-                                        <span class="text-[14px] font-medium leading-[16px] text-[ #191C22]">Back</span>
-                                </div>
-                                <div class="flex items-center justify-between w-full rounded-[24px] px-20">
-                                        <div class="flex flex-col justify-center w-[413px] h-[259px]">
-                                                <h2 class="text-[40px] font-semibold leading-[48px] text-[ #191C22]">Car Insurance</h2>
-                                                <p class="my-6 text-[16px] font-normal leading-[28px] text-[#858585]">
-                                                        Protect your vehicle and yourself with our comprehensive auto insurance coverage. Whether you're driving to work, running errands, or embarking on a road trip, we'll make sure you're covered
-                                                        every mile of the way.
-                                                </p>
-                                                <button class="bg-[#00BA70] w-[191px] h-[43px] rounded-[24px] px-[60] py-[12px] text-[#F4F9F7] text-[16px] font-medium leading-[19.20px]">Buy Now</button>
-                                        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+            screens: {
+              fd: [{ max: "320px" }],
+              sm: "576px",
+              md: "768px",
+              lg: "992px",
+              xl: "1200px",
+              "2xl": "1400px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="">
+    <div class="">
+      <!--================ Nav Section ========== -->
+      <nav class="flex justify-center items-center py-7 border-b">
+        <div class="lg:w-[85%] w-[95%] flex justify-between">
+          <div>
+            <h4 class="text-[16px] font-semibold leading-[16px]">KINITO</h4>
+          </div>
+          <div>
+            <ul class="flex space-x-14">
+              <li>
+                <a
+                  href="/index.html"
+                  class="text-[16px] font-semibold leading-[16px] text-[#00BA70]"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/productPage/product.html"
+                  class="text-[16px] font-medium leading-[16px] text-[#7A9289]"
+                  >Products</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-[16px] font-medium leading-[16px] text-[#7A9289]"
+                  >Help</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/sign-up/signup.html"
+                  class="text-white w-[102px] h-[36] px-[20px] py-[10px] bg-[#00BA70] rounded-[24px]"
+                  >Sign Up</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- ================= Hero Section ======================= -->
+      <section class="h-[714px] bg-[#EDFCF6] flex flex-col py-20">
+        <div class="px-10 flex items-center">
+          <img
+            src="../Images/arrow_circle_left_FILL0_wght400_GRAD0_opsz24.png"
+            alt=""
+            class="h-[30px] w-[30px] mr-2"
+          />
+          <span class="text-[14px] font-medium leading-[16px] text-[ #191C22]"
+            >Back</span
+          >
+        </div>
+        <div
+          class="flex items-center justify-between w-full rounded-[24px] px-20"
+        >
+          <div class="flex flex-col justify-center w-[413px] h-[259px]">
+            <h2
+              class="text-[40px] font-semibold leading-[48px] text-[ #191C22]"
+            >
+              Car Insurance
+            </h2>
+            <p
+              class="my-6 text-[16px] font-normal leading-[28px] text-[#858585]"
+            >
+              Protect your vehicle and yourself with our comprehensive auto
+              insurance coverage. Whether you're driving to work, running
+              errands, or embarking on a road trip, we'll make sure you're
+              covered every mile of the way.
+            </p>
+            <button
+              class="bg-[#00BA70] w-[191px] h-[43px] rounded-[24px] px-[60] py-[12px] text-[#F4F9F7] text-[16px] font-medium leading-[19.20px]"
+              id="openModal"
+            >
+              Buy Now
+            </button>
+          </div>
 
-                                        <img src="../Images/carInsurance.jpg" alt="" class="h-[500px] w-[720px] rounded-[24px]" />
-                                </div>
-                        </section>
-                        <!-- ========== Want to  kmow more ================ -->
-                        <section class="mb-8 flex justify-center">
-                                <div class="py-16 lg:w-[85%] w-[95%] flex items-center justify-center border-b border-t py-6">
-                                        <div class="lg:w-[80%] h-[214px] flex lg:flex-row flex-col items-center justify-between">
-                                                <div class="lg:text-left text-center">
-                                                        <h2 class="text-[28px] font-semibold leading-[34px] text-[#02311E] mb-6">KINITO</h2>
-                                                        <p class="text-[16px] font-normal leading-[28px] text-[#696F7A]">
-                                                                Want to know more about our mobile sales channel <br />
-                                                                designed exclusively for insurance companies and <br />
-                                                                agents? Click “Learn more”.
-                                                        </p>
-                                                </div>
-                                                <div>
-                                                        <button class="bg-[#00BA70] w-[169px] h-[59px] rounded-[40px] px-[39] py-[20px] text-[#F4F9F7] text-[16px] font-medium leading-[19.20px]">Learn more</button>
-                                                </div>
-                                        </div>
-                                </div>
-                        </section>
-                        <!-- ========= Footer ============ -->
+          <img
+            src="../Images/carInsurance.jpg"
+            alt=""
+            class="h-[500px] w-[720px] rounded-[24px]"
+          />
+        </div>
+      </section>
+      <!-- ========== Want to  kmow more ================ -->
+      <section class="mb-8 flex justify-center">
+        <div
+          class="py-16 lg:w-[85%] w-[95%] flex items-center justify-center border-b border-t py-6"
+        >
+          <div
+            class="lg:w-[80%] h-[214px] flex lg:flex-row flex-col items-center justify-between"
+          >
+            <div class="lg:text-left text-center">
+              <h2
+                class="text-[28px] font-semibold leading-[34px] text-[#02311E] mb-6"
+              >
+                KINITO
+              </h2>
+              <p class="text-[16px] font-normal leading-[28px] text-[#696F7A]">
+                Want to know more about our mobile sales channel <br />
+                designed exclusively for insurance companies and <br />
+                agents? Click “Learn more”.
+              </p>
+            </div>
+            <div>
+              <button
+                class="bg-[#00BA70] w-[169px] h-[59px] rounded-[40px] px-[39] py-[20px] text-[#F4F9F7] text-[16px] font-medium leading-[19.20px]"
+              >
+                Learn more
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ========= Footer ============ -->
 
-                        <footer class="bg-[#00BA70] py-6 flex flex-col items-center lg:rounded-none rounded-t-2xl">
-                                <div class="lg:py-16 py-6 lg:w-[85%] w-[95%] flex items-center justify-center">
-                                        <div class="lg:w-[80%] flex lg:flex-row flex-col justify-between">
-                                                <div class="h[75px] w-[438px] lg:mb-0 mb-6">
-                                                        <h2 class="text-[16px] font-semibold leading-[19.2px] text-[#E5E5E5] mb-2">KINITO</h2>
-                                                        <p class="text-[14px] font-normal leading-[24px] text-[#E5E5E5]">
-                                                                Revolutionize your insurance business with our Mobile Sales <br />
-                                                                Channel designed for insurance companies and agents.
-                                                        </p>
-                                                </div>
-                                                <div class="flex flex-col">
-                                                        <a class="text-[16px] font-semibold leading-[19.20px] text-[#E5E5E5] mb-2">Products</a>
-                                                        <div>
-                                                                <ul class="flex lg:flex-row flex-col lg:space-x-4">
-                                                                        <li><a href="" class="text-[14px] font-normal leading-[24px] text-[#CFDAD6]">Help</a></li>
-                                                                        <li><a href="" class="text-[14px] font-normal leading-[24px] text-[#CFDAD6]">General</a></li>
-                                                                        <li><a href="" class="text-[14px] font-normal leading-[24px] text-[#CFDAD6]">Home</a></li>
-                                                                </ul>
-                                                        </div>
-                                                </div>
-                                        </div>
-                                </div>
-                                <div class="w-full lg:flex hidden justify-between items-center h-[24px]">
-                                        <div class="w-2/5 h-[1px] bg-[#CFDAD6]"></div>
-                                        <p class="text-[12px] font-normal leading-[24px] text-[#CFDAD6]">Copyright &#169; 2024 Kinito. All rights reserved</p>
-                                        <div class="w-2/5 h-[1px] bg-[#CFDAD6]"></div>
-                                </div>
-                        </footer>
+      <footer
+        class="bg-[#00BA70] py-6 flex flex-col items-center lg:rounded-none rounded-t-2xl"
+      >
+        <div
+          class="lg:py-16 py-6 lg:w-[85%] w-[95%] flex items-center justify-center"
+        >
+          <div class="lg:w-[80%] flex lg:flex-row flex-col justify-between">
+            <div class="h[75px] w-[438px] lg:mb-0 mb-6">
+              <h2
+                class="text-[16px] font-semibold leading-[19.2px] text-[#E5E5E5] mb-2"
+              >
+                KINITO
+              </h2>
+              <p class="text-[14px] font-normal leading-[24px] text-[#E5E5E5]">
+                Revolutionize your insurance business with our Mobile Sales
+                <br />
+                Channel designed for insurance companies and agents.
+              </p>
+            </div>
+            <div class="flex flex-col">
+              <a
+                class="text-[16px] font-semibold leading-[19.20px] text-[#E5E5E5] mb-2"
+                >Products</a
+              >
+              <div>
+                <ul class="flex lg:flex-row flex-col lg:space-x-4">
+                  <li>
+                    <a
+                      href=""
+                      class="text-[14px] font-normal leading-[24px] text-[#CFDAD6]"
+                      >Help</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="text-[14px] font-normal leading-[24px] text-[#CFDAD6]"
+                      >General</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="text-[14px] font-normal leading-[24px] text-[#CFDAD6]"
+                      >Home</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-full lg:flex hidden justify-between items-center h-[24px]"
+        >
+          <div class="w-2/5 h-[1px] bg-[#CFDAD6]"></div>
+          <p class="text-[12px] font-normal leading-[24px] text-[#CFDAD6]">
+            Copyright &#169; 2024 Kinito. All rights reserved
+          </p>
+          <div class="w-2/5 h-[1px] bg-[#CFDAD6]"></div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- modal box -->
+    <div
+      id="modal"
+      class="hidden justify-center items-center fixed z-[1000] left-0 top-0 w-[100%] h-[100%] bg-[rgba(0,0,0,0.4)] overflow-auto"
+    >
+      <div class="flex justify-center items-center h-[100vh] w-full">
+        <div class="bg-[#fefefe] m-[15% auto] p-20px rounded-lg w-[50%]">
+          <div class="w-[95%] py-1">
+            <span
+              class="close cursor-pointer text-[#aaaaaa] font-bold text-[28px] float-right"
+              >&times;</span
+            >
+          </div>
+          <form id="regForm" class="p-[40px] w-full">
+            <!-- One "tab" for each step in the form: -->
+
+            <!-- first step -->
+            <div class="tab hidden w-full">
+              <div class="mb-8">
+                <h1 class="text-2xl font-bold text-[#191C22]">
+                  Let's Find Your Perfect Fit
+                </h1>
+                <p class="text-[#667085]">
+                  Pick a path to your solution wonderland
+                </p>
+              </div>
+              <div class="flex justify-center items-center flex-col w-full">
+                <small
+                  class="w-full mb-4 border border-[#ECF0F6] py-3 flex justify-center items-center rounded-md"
+                >
+                  <div class="w-[95%]">
+                    <input
+                      oninput="this.className = 'Schengen'"
+                      name="carInsurance"
+                      type="radio"
+                    />
+                    <label for="carInsurance" class="text-[#9CA3AF] pl-2"
+                      >Schengen</label
+                    >
+                  </div>
+                </small>
+                <small
+                  class="w-full mb-4 border border-[#ECF0F6] py-3 flex justify-center items-center rounded-md"
+                >
+                  <div class="w-[95%]">
+                    <input
+                      oninput="this.className = 'Worldwide'"
+                      name="carInsurance"
+                      type="radio"
+                    />
+                    <label for="carInsurance" class="text-[#9CA3AF] pl-2"
+                      >Worldwide</label
+                    >
+                  </div>
+                </small>
+              </div>
+            </div>
+
+            <!-- second step -->
+            <div class="tab hidden w-full">
+              <div class="mb-8">
+                <h1 class="text-2xl font-bold text-[#191C22]">Schengen</h1>
+                <p class="text-[#667085]">Fill the form below</p>
+              </div>
+
+              <!-- second step first input box -->
+              <small class="w-full mb-4">
+                <div class="flex justify-center items-start flex-col mb-4">
+                  <label for="" class="text-md font-bold">Destination</label>
+                  <select
+                    name=""
+                    id=""
+                    class="w-full border border-[#E5E7EB] focus:border-none px-4 py-3 mt-2"
+                  >
+                    <option value="">Please select destination</option>
+                    <option value="">Abia</option>
+                    <option value="">Adamawa</option>
+                  </select>
                 </div>
+              </small>
 
-                <!-- modal box -->
-                <button id="openModal">Open Modal</button>
-
-                <div id="modal" class="modal">
-                        <div class="modal-content">
-                                <span class="close">&times;</span>
-                                <form id="regForm" action="/action_page.php">
-                                        <h1>Register:</h1>
-                                        <!-- One "tab" for each step in the form: -->
-                                        <div class="tab">
-                                                Name:
-                                                <p>
-                                                        <input placeholder="First name..." oninput="this.className = ''" name="fname" />
-                                                </p>
-                                                <p>
-                                                        <input placeholder="Last name..." oninput="this.className = ''" name="lname" />
-                                                </p>
-                                        </div>
-                                        <div class="tab">
-                                                Contact Info:
-                                                <p>
-                                                        <input placeholder="E-mail..." oninput="this.className = ''" name="email" />
-                                                </p>
-                                                <p>
-                                                        <input placeholder="Phone..." oninput="this.className = ''" name="phone" />
-                                                </p>
-                                        </div>
-                                        <div class="tab">
-                                                Birthday:
-                                                <p>
-                                                        <input placeholder="dd" oninput="this.className = ''" name="dd" />
-                                                </p>
-                                                <p>
-                                                        <input placeholder="mm" oninput="this.className = ''" name="nn" />
-                                                </p>
-                                                <p>
-                                                        <input placeholder="yyyy" oninput="this.className = ''" name="yyyy" />
-                                                </p>
-                                        </div>
-                                        <div class="tab">
-                                                Login Info:
-                                                <p>
-                                                        <input placeholder="Username..." oninput="this.className = ''" name="uname" />
-                                                </p>
-                                                <p>
-                                                        <input placeholder="Password..." oninput="this.className = ''" name="pword" type="password" />
-                                                </p>
-                                        </div>
-                                        <div style="overflow: auto">
-                                                <div style="float: right">
-                                                        <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-                                                        <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
-                                                </div>
-                                        </div>
-                                        <!-- Circles which indicates the steps of the form: -->
-                                        <div style="text-align: center; margin-top: 40px">
-                                                <span class="step"></span>
-                                                <span class="step"></span>
-                                                <span class="step"></span>
-                                                <span class="step"></span>
-                                        </div>
-                                </form>
-                        </div>
+              <!-- second step second input box -->
+              <small class="w-full mb-4">
+                <div class="flex justify-between items-center w-full">
+                  <div
+                    class="flex justify-center items-start flex-col mb-4 w-[48%]"
+                  >
+                    <label for="" class="text-md font-bold"
+                      >Date of birth</label
+                    >
+                    <input
+                      name=""
+                      id=""
+                      type="date"
+                      class="w-full border border-[#E5E7EB] focus:border-none px-4 py-3 mt-2"
+                    />
+                  </div>
+                  <div
+                    class="flex justify-center items-start flex-col mb-4 w-[48%]"
+                  >
+                    <label for="" class="text-md font-bold"
+                      >Period of cover</label
+                    >
+                    <select
+                      name=""
+                      id=""
+                      class="w-full border border-[#E5E7EB] focus:border-none px-4 py-3 mt-2"
+                    >
+                      <option value="">Please select period of cover</option>
+                      <option value="">Abia</option>
+                      <option value="">Adamawa</option>
+                    </select>
+                  </div>
                 </div>
-                <!-- modal box -->
+              </small>
 
-                <script src="../script.js"></script>
-                <script src="https://cdn.tailwindcss.com"></script>
-                <script>
-                        tailwind.config = {
-                                theme: {
-                                        extend: {
-                                                colors: {
-                                                        clifford: "#da373d",
-                                                },
-                                                screens: {
-                                                        fd: [{ max: "320px" }],
-                                                        sm: "576px",
-                                                        md: "768px",
-                                                        lg: "992px",
-                                                        xl: "1200px",
-                                                        "2xl": "1400px",
-                                                },
-                                        },
-                                },
-                        };
-                </script>
-        </body>
+              <!-- second step third input box -->
+              <small class="w-full mb-4">
+                <div class="flex justify-between items-center w-full">
+                  <div
+                    class="flex justify-center items-start flex-col mb-4 w-[48%]"
+                  >
+                    <label for="" class="text-md font-bold"
+                      >Amount payable/premium</label
+                    >
+                    <input
+                      name=""
+                      id=""
+                      type="number"
+                      placeholder="0.00"
+                      class="w-full border border-[#E5E7EB] focus:border-none px-4 py-3 mt-2"
+                    />
+                  </div>
+                  <div
+                    class="flex justify-center items-start flex-col mb-4 w-[48%]"
+                  >
+                    <label for="" class="text-md font-bold"
+                      >Maximum limit of liability (EUR)</label
+                    >
+                    <select
+                      name=""
+                      id=""
+                      class="w-full border border-[#E5E7EB] focus:border-none px-4 py-3 mt-2"
+                    >
+                      <option value="">0.00</option>
+                      <option value="">Abia</option>
+                      <option value="">Adamawa</option>
+                    </select>
+                  </div>
+                </div>
+              </small>
+            </div>
+
+            <!-- third step -->
+            <div class="tab hidden w-full">
+              <div class="mb-8">
+                <h1 class="text-2xl font-bold text-[#191C22]">
+                  Let's Find Your Perfect Fit
+                </h1>
+                <p class="text-[#667085]">
+                  Pick a path to your solution wonderland
+                </p>
+              </div>
+              <div class="flex justify-center items-center flex-col w-full">
+                <small
+                  class="w-full mb-4 border border-[#ECF0F6] py-3 flex justify-center items-center rounded-md"
+                >
+                  <div class="w-[95%]">
+                    <input
+                      oninput="this.className = 'Schengen'"
+                      name="carInsurance"
+                      type="radio"
+                    />
+                    <label for="carInsurance" class="text-[#9CA3AF] pl-2"
+                      >Schengen</label
+                    >
+                  </div>
+                </small>
+                <small
+                  class="w-full mb-4 border border-[#ECF0F6] py-3 flex justify-center items-center rounded-md"
+                >
+                  <div class="w-[95%]">
+                    <input
+                      oninput="this.className = 'Worldwide'"
+                      name="carInsurance"
+                      type="radio"
+                    />
+                    <label for="carInsurance" class="text-[#9CA3AF] pl-2"
+                      >Worldwide</label
+                    >
+                  </div>
+                </small>
+              </div>
+            </div>
+
+            <!-- fourth step -->
+            <div class="tab hidden w-full">
+              <div class="mb-8">
+                <h1 class="text-2xl font-bold text-[#191C22]">
+                  Let's Find Your Perfect Fit
+                </h1>
+                <p class="text-[#667085]">
+                  Pick a path to your solution wonderland
+                </p>
+              </div>
+              <div class="flex justify-center items-center flex-col w-full">
+                <small
+                  class="w-full mb-4 border border-[#ECF0F6] py-3 flex justify-center items-center rounded-md"
+                >
+                  <div class="w-[95%]">
+                    <input
+                      oninput="this.className = 'Schengen'"
+                      name="carInsurance"
+                      type="radio"
+                    />
+                    <label for="carInsurance" class="text-[#9CA3AF] pl-2"
+                      >Schengen</label
+                    >
+                  </div>
+                </small>
+                <small
+                  class="w-full mb-4 border border-[#ECF0F6] py-3 flex justify-center items-center rounded-md"
+                >
+                  <div class="w-[95%]">
+                    <input
+                      oninput="this.className = 'Worldwide'"
+                      name="carInsurance"
+                      type="radio"
+                    />
+                    <label for="carInsurance" class="text-[#9CA3AF] pl-2"
+                      >Worldwide</label
+                    >
+                  </div>
+                </small>
+              </div>
+            </div>
+
+            <!-- button -->
+            <div style="overflow: auto">
+              <div style="float: right">
+                <button
+                  type="button"
+                  id="prevBtn"
+                  class="px-8 py-3 rounded-2xl"
+                  onclick="nextPrev(-1)"
+                >
+                  Previous
+                </button>
+                <button
+                  type="button"
+                  id="nextBtn"
+                  class="bg-[#00BA70] px-8 py-3 rounded-2xl text-white ml-4"
+                  onclick="nextPrev(1)"
+                >
+                  Next
+                </button>
+              </div>
+            </div>
+            <!-- Circles which indicates the steps of the form: -->
+            <!-- <div style="text-align: center; margin-top: 40px">
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+            </div> -->
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- modal box -->
+
+    <script src="../script.js"></script>
+  </body>
 </html>

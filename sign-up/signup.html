@@ -6,6 +6,8 @@
     <title>Signup Page</title>
     <link rel="stylesheet" href="../style.css" />
 
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
         theme: {
@@ -30,10 +32,12 @@
     <section>
       <div class="h-[100vh] flex justify-center items-center w-full border-2">
         <div
-          class="grid grid-cols-2 gap-0 h-full w-full border bg-center bg-cover bg-no-repeat"
+          class="grid lg:grid-cols-2 grid-cols-1 gap-0 h-full w-full border bg-center bg-cover bg-no-repeat"
         >
           <div class="flex justify-center items-center">
-            <div class="w-[40%] flex justify-center items-center flex-col">
+            <div
+              class="lg:w-[40%] w-[95%] flex justify-center items-center flex-col"
+            >
               <h1 class="text-2xl font-bold mb-2">Sign up for Kinito</h1>
               <p class="text-sm text-center">
                 Protect what matters most. Sign up now to secure your coverage.
@@ -66,7 +70,7 @@
             </div>
           </div>
           <div
-            class="h-[100vh] border w-full bg-bottom bg-cover bg-no-repeat bg-[url(/Images/housecap.svg)]"
+            class="h-[100vh] border w-full bg-bottom bg-cover bg-no-repeat bg-[url(/Images/housecap.svg)] lg:block hidden"
           >
             <!-- <img
               class="h-[100%] w-full bg-cover"
@@ -77,8 +81,5 @@
         </div>
       </div>
     </section>
-
-    <!-- tailwind css -->
-    <script src="https://cdn.tailwindcss.com"></script>
   </body>
 </html>

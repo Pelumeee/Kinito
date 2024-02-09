@@ -1,28 +1,3 @@
-// modal function
-// document.addEventListener("DOMContentLoaded", function() {
-//     const modal = document.getElementById("modal");
-//     const openModalBtn = document.getElementById("openModal");
-//     const closeModalBtn = document.getElementsByClassName("close")[0];
-//     const body = document.querySelector("body");
-  
-//     openModalBtn.addEventListener("click", function() {
-//       modal.style.display = "block";
-//       body.style.overflow = "hidden"; // Prevent background scrolling
-//     });
-  
-//     closeModalBtn.addEventListener("click", function() {
-//       modal.style.display = "none";
-//       body.style.overflow = "auto"; // Allow background scrolling
-//     });
-  
-//     window.addEventListener("click", function(event) {
-//       if (event.target === modal) {
-//         modal.style.display = "none";
-//         body.style.overflow = "auto"; // Allow background scrolling
-//       }
-//     });
-//   });
-
 document.addEventListener("DOMContentLoaded", function() {
     const modal = document.getElementById("modal");
     const openModalBtn = document.getElementById("openModal");
@@ -30,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const body = document.querySelector("body");
   
     openModalBtn.addEventListener("click", function() {
-      modal.style.display = "block";
+      modal.style.display = "flex";
       body.style.overflow = "hidden"; // Prevent background scrolling
     });
   
@@ -64,20 +39,27 @@ showTab(currentTab); // Display the current tab
 function showTab(n) {
   // This function will display the specified tab of the form...
   var x = document.getElementsByClassName("tab");
+  for (var i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+}
   x[n].style.display = "block";
   //... and fix the Previous/Next buttons:
   if (n == 0) {
-    document.getElementById("prevBtn").style.display = "none";
+    document.getElementById("prevBtn").style.display = "inline";
+    document.getElementById("prevBtn").innerHTML = "Cancel";
   } else {
     document.getElementById("prevBtn").style.display = "inline";
+    document.getElementById("prevBtn").innerHTML = "Back";
   }
   if (n == (x.length - 1)) {
     document.getElementById("nextBtn").innerHTML = "Submit";
+  }else if(n == 0){
+    document.getElementById("prevBtn").style.backgroundColor = "#BBC3BE";
   } else {
     document.getElementById("nextBtn").innerHTML = "Next";
   }
   //... and run a function that will display the correct step indicator:
-  fixStepIndicator(n)
+//   fixStepIndicator(n)
 }
 
 function nextPrev(n) {
@@ -115,19 +97,19 @@ function validateForm() {
     }
   }
   // If the valid status is true, mark the step as finished and valid:
-  if (valid) {
-    document.getElementsByClassName("step")[currentTab].className += " finish";
-  }
+//   if (valid) {
+//     document.getElementsByClassName("step")[currentTab].className += " finish";
+//   }
   return valid; // return the valid status
 }
 
-function fixStepIndicator(n) {
-  // This function removes the "active" class of all steps...
-  var i, x = document.getElementsByClassName("step");
-  for (i = 0; i < x.length; i++) {
-    x[i].className = x[i].className.replace(" active", "");
-  }
-  //... and adds the "active" class on the current step:
-  x[n].className += " active";
-}
+// function fixStepIndicator(n) {
+//   // This function removes the "active" class of all steps...
+//   var i, x = document.getElementsByClassName("step");
+//   for (i = 0; i < x.length; i++) {
+//     x[i].className = x[i].className.replace(" active", "");
+//   }
+//   //... and adds the "active" class on the current step:
+//   x[n].className += " active";
+// }
 // stepper function
