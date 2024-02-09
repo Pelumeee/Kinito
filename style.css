@@ -9,19 +9,6 @@ body {
         font-family: "Tomorrow", sans-serif;
 }
 
-.logos {
-        height: 984px;
-        width: 184px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border-left: 1px solid #f9f3f3;
-        border-right: 1px solid #f9f3f3;
-        border-radius: 80px;
-        overflow: hidden;
-        white-space: nowrap;
-}
-
 .scroller__inner {
         display: flex;
         flex-direction: column;
@@ -39,8 +26,16 @@ body {
         --_animation-direction: forwards;
 }
 
+.scroller[data-direction="right"] {
+        --_animation-direction: normal;
+}
+
+.scroller[data-direction="left"] {
+        --_animation-direction: reverse;
+}
+
 .scroller[data-speed="fast"] {
-        --_animation-duration: 15s;
+        --_animation-duration: 18s;
 }
 
 .scroller[data-speed="slow"] {
@@ -73,7 +68,6 @@ body {
         background: #00ba70;
         height: 1rem;
 }
-
 
 /* .modal {
         display: none;
