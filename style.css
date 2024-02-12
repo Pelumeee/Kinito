@@ -26,14 +26,6 @@ body {
         --_animation-direction: forwards;
 }
 
-.scroller[data-direction="right"] {
-        --_animation-direction: normal;
-}
-
-.scroller[data-direction="left"] {
-        --_animation-direction: reverse;
-}
-
 .scroller[data-speed="fast"] {
         --_animation-duration: 18s;
 }
@@ -44,6 +36,27 @@ body {
 @keyframes scroll {
         to {
                 transform: translateY(calc(-50% - 0.5rem));
+        }
+}
+
+/* scroller on small screens */
+
+.scroller__inner__small {
+        display: flex;
+        gap: 1rem;
+        width: max-content;
+        flex-wrap: nowrap;
+        animation: scrollLeft var(--_animation-duration, 13s) var(--_animation-direction, forwards) linear infinite;
+}
+.scroller__small[data-direction="right"] {
+        --_animation-direction: normal;
+}
+.scroller__small[data-direction="left"] {
+        --_animation-direction: reverse;
+}
+@keyframes scrollLeft {
+        to {
+                transform: translateX(calc(-50% + 0.5rem));
         }
 }
 .active {
