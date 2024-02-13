@@ -60,9 +60,7 @@
                                                                 Whether you're traveling for business or pleasure, our travel insurance policies provide peace of mind and protection against unexpected travel disruptions, medical emergencies, and
                                                                 more.
                                                         </p>
-                                                        <div class="mb-6 flex lg:justify-start justify-center w-full">
-                                                                <a href="" class="bg-[#00BA70] px-8 py-3 rounded-full text-white">Buy Now</a>
-                                                        </div>
+                                                        <button class="bg-[#00BA70] px-8 py-3 rounded-full text-white font-medium leading-[19.20px]" id="openModal">Buy Now</button>
                                                 </div>
                                                 <div class="h-full w-full rounded-2xl lg:block lg:order-last order-first">
                                                         <img src="../Images/travelInsurance.jpg" alt="a car" class="h-full w-full rounded-2xl" />
@@ -122,7 +120,7 @@
                 <!-- modal box -->
                 <div id="modal" class="hidden justify-center items-center fixed z-[1000] left-0 top-0 w-[100%] h-[100%] bg-[rgba(0,0,0,0.4)] overflow-auto">
                         <div class="flex justify-center items-center h-[100vh] w-full">
-                                <div class="bg-[#fefefe] m-[15% auto] p-20px rounded-lg w-[50%]">
+                                <div class="bg-[#fefefe] m-[15% auto] p-20px rounded-lg w-auto">
                                         <div class="w-[95%] py-1">
                                                 <span class="close cursor-pointer text-[#aaaaaa] font-bold text-[28px] float-right">&times;</span>
                                         </div>
@@ -130,7 +128,7 @@
                                                 <!-- One "tab" for each step in the form: -->
 
                                                 <!-- first step -->
-                                                <div class="tab hidden w-full">
+                                                <div class="tab hidden w-[30rem]">
                                                         <div class="mb-8">
                                                                 <h1 class="text-2xl font-bold text-[#191C22]">Let's Find Your Perfect Fit</h1>
                                                                 <p class="text-[#667085]">Pick a path to your solution wonderland</p>
@@ -152,7 +150,7 @@
                                                 </div>
 
                                                 <!-- second step -->
-                                                <div class="tab hidden w-full">
+                                                <div class="tab hidden w-[45rem]">
                                                         <div class="mb-8">
                                                                 <h1 class="text-2xl font-bold text-[#191C22]">Schengen</h1>
                                                                 <p class="text-[#667085]">Fill the form below</p>
@@ -205,50 +203,125 @@
                                                                         </div>
                                                                 </div>
                                                         </small>
+                                                        <small class="my-6 w-full py-6 flex flex-col items-center justify-center space-y-4 border-b border-t">
+                                                                <h3 class="text-lg">Calculated Amount</h3>
+                                                                <h1 class="text-3xl font-bold">#0.00</h1>
+                                                        </small>
                                                 </div>
 
                                                 <!-- third step -->
-                                                <div class="tab hidden w-full">
+                                                <div class="tab hidden w-[45rem]">
                                                         <div class="mb-8">
-                                                                <h1 class="text-2xl font-bold text-[#191C22]">Let's Find Your Perfect Fit</h1>
-                                                                <p class="text-[#667085]">Pick a path to your solution wonderland</p>
+                                                                <h1 class="text-2xl font-bold text-[#191C22]">Schengen</h1>
+                                                                <p class="text-[#667085]">Fill the form below</p>
                                                         </div>
-                                                        <div class="flex justify-center items-center flex-col w-full">
-                                                                <small class="w-full mb-4 border border-[#ECF0F6] py-3 flex justify-center items-center rounded-md">
-                                                                        <div class="w-[95%]">
-                                                                                <input oninput="this.className = 'Schengen'" name="carInsurance" type="radio" />
-                                                                                <label for="carInsurance" class="text-[#9CA3AF] pl-2">Schengen</label>
+                                                        <div class="hideScroller h-[35rem] overflow-auto">
+                                                                <!-- third step first input box -->
+                                                                <small class="w-full mb-4">
+                                                                        <div class="flex justify-center items-start flex-col mb-4">
+                                                                                <label for="" class="text-md font-bold">Full-name</label>
+                                                                                <input type="text" placeholder="Placeholder" class="w-full border border-[#E5E7EB] focus:border-none px-4 py-3 mt-2" />
                                                                         </div>
                                                                 </small>
-                                                                <small class="w-full mb-4 border border-[#ECF0F6] py-3 flex justify-center items-center rounded-md">
-                                                                        <div class="w-[95%]">
-                                                                                <input oninput="this.className = 'Worldwide'" name="carInsurance" type="radio" />
-                                                                                <label for="carInsurance" class="text-[#9CA3AF] pl-2">Worldwide</label>
+
+                                                                <!-- third step second input box -->
+                                                                <small class="w-full mb-4">
+                                                                        <div class="flex justify-between items-center w-full">
+                                                                                <div class="flex justify-center items-start flex-col mb-4 w-[48%]">
+                                                                                        <label for="" class="text-md font-bold">Address</label>
+                                                                                        <input name="" id="" placeholder="Placeholder" type="date" class="w-full border border-[#E5E7EB] focus:border-none px-4 py-3 mt-2" />
+                                                                                </div>
+                                                                                <div class="flex justify-center items-start flex-col mb-4 w-[48%]">
+                                                                                        <label for="" class="text-md font-bold">Occupation</label>
+                                                                                        <input type="text" placeholder="Placeholder" class="w-full border border-[#E5E7EB] focus:border-none px-4 py-3 mt-2" />
+                                                                                </div>
                                                                         </div>
+                                                                </small>
+
+                                                                <!-- third step third input box -->
+                                                                <small class="w-full mb-4">
+                                                                        <div class="flex justify-between items-center w-full">
+                                                                                <div class="flex justify-center items-start flex-col mb-4 w-[48%]">
+                                                                                        <label for="" class="text-md font-bold">Client phone number</label>
+                                                                                        <input name="" id="" type="number" placeholder="Placeholder" class="w-full border border-[#E5E7EB] focus:border-none px-4 py-3 mt-2" />
+                                                                                </div>
+                                                                                <div class="flex justify-center items-start flex-col mb-4 w-[48%]">
+                                                                                        <label for="" class="text-md font-bold">Passport number</label>
+                                                                                        <input type="text" class="w-full border border-[#E5E7EB] focus:border-none px-4 py-3 mt-2" />
+                                                                                </div>
+                                                                        </div>
+                                                                </small>
+                                                                <!-- third step fourth input box -->
+                                                                <small class="w-full mb-4">
+                                                                        <div class="flex justify-between items-center w-full">
+                                                                                <div class="flex justify-center items-start flex-col mb-4 w-[48%]">
+                                                                                        <label for="" class="text-md font-bold">Date of issue</label>
+                                                                                        <input name="" id="" type="number" placeholder="Placeholder" class="w-full border border-[#E5E7EB] focus:border-none px-4 py-3 mt-2" />
+                                                                                </div>
+                                                                                <div class="flex justify-center items-start flex-col mb-4 w-[48%]">
+                                                                                        <label for="" class="text-md font-bold">Passport validity</label>
+                                                                                        <input type="text" class="w-full border border-[#E5E7EB] focus:border-none px-4 py-3 mt-2" />
+                                                                                </div>
+                                                                        </div>
+                                                                </small>
+                                                                <!-- Passport BioData  -->
+                                                                <small class="mb-4 w-full flex flex-col space-y-4">
+                                                                        <h3 class="text-md font-bold">Passport bio-data page</h3>
+                                                                        <div class="flex flex-col justify-center items-center py-10 bg-[#F7FFFA] border border-dashed">
+                                                                                <input type="file" name="fileUpload" id="fileUpload" accept=".pdf,.doc,.docx" multiple />
+                                                                        </div>
+                                                                </small>
+                                                                <!--  calculated amount  -->
+                                                                <small class="my-6 w-full py-6 flex flex-col items-center justify-center space-y-4 border-b border-t">
+                                                                        <h3 class="text-lg">Calculated Amount</h3>
+                                                                        <h1 class="text-3xl font-bold">#0.00</h1>
                                                                 </small>
                                                         </div>
                                                 </div>
 
                                                 <!-- fourth step -->
-                                                <div class="tab hidden w-full">
+                                                <div class="tab hidden w-[45rem]">
                                                         <div class="mb-8">
-                                                                <h1 class="text-2xl font-bold text-[#191C22]">Let's Find Your Perfect Fit</h1>
-                                                                <p class="text-[#667085]">Pick a path to your solution wonderland</p>
+                                                                <h1 class="text-2xl font-bold text-[#191C22]">Schengen</h1>
+                                                                <p class="text-[#667085]">Fill the form below</p>
                                                         </div>
-                                                        <div class="flex justify-center items-center flex-col w-full">
-                                                                <small class="w-full mb-4 border border-[#ECF0F6] py-3 flex justify-center items-center rounded-md">
-                                                                        <div class="w-[95%]">
-                                                                                <input oninput="this.className = 'Schengen'" name="carInsurance" type="radio" />
-                                                                                <label for="carInsurance" class="text-[#9CA3AF] pl-2">Schengen</label>
+                                                        <small class="w-full mb-4">
+                                                                <div class="flex justify-between items-center w-full">
+                                                                        <div class="flex justify-center items-start flex-col mb-4 w-[48%]">
+                                                                                <label for="" class="text-md font-bold">Type of entry</label>
+                                                                                <input name="" id="" placeholder="Placeholder" type="date" class="w-full border border-[#E5E7EB] focus:border-none px-4 py-3 mt-2" />
                                                                         </div>
-                                                                </small>
-                                                                <small class="w-full mb-4 border border-[#ECF0F6] py-3 flex justify-center items-center rounded-md">
-                                                                        <div class="w-[95%]">
-                                                                                <input oninput="this.className = 'Worldwide'" name="carInsurance" type="radio" />
-                                                                                <label for="carInsurance" class="text-[#9CA3AF] pl-2">Worldwide</label>
+                                                                        <div class="flex justify-center items-start flex-col mb-4 w-[48%]">
+                                                                                <label for="" class="text-md font-bold">Travel group type</label>
+                                                                                <input type="text" placeholder="Placeholder" class="w-full border border-[#E5E7EB] focus:border-none px-4 py-3 mt-2" />
                                                                         </div>
-                                                                </small>
-                                                        </div>
+                                                                </div>
+                                                        </small>
+
+                                                        <!-- third step third input box -->
+                                                        <small class="w-full mb-4">
+                                                                <div class="flex justify-between items-center w-full">
+                                                                        <div class="flex justify-center items-start flex-col mb-4 w-[48%]">
+                                                                                <label for="" class="text-md font-bold">Purpose of entry</label>
+                                                                                <input name="" id="" type="number" placeholder="Placeholder" class="w-full border border-[#E5E7EB] focus:border-none px-4 py-3 mt-2" />
+                                                                        </div>
+                                                                        <div class="flex justify-center items-start flex-col mb-4 w-[48%]">
+                                                                                <label for="" class="text-md font-bold">Next of kin</label>
+                                                                                <input type="text" class="w-full border border-[#E5E7EB] focus:border-none px-4 py-3 mt-2" />
+                                                                        </div>
+                                                                </div>
+                                                        </small>
+                                                        <small class="w-full mb-4">
+                                                                <div class="flex justify-center items-start flex-col mb-4">
+                                                                        <label for="" class="text-md font-bold">Next of kin address</label>
+                                                                        <input type="text" placeholder="Placeholder" class="w-full border border-[#E5E7EB] focus:border-none px-4 py-3 mt-2" />
+                                                                </div>
+                                                        </small>
+                                                        <!--  calculated amount  -->
+                                                        <small class="my-6 w-full py-6 flex flex-col items-center justify-center space-y-4 border-b border-t">
+                                                                <h3 class="text-lg">Calculated Amount</h3>
+                                                                <h1 class="text-3xl font-bold">#0.00</h1>
+                                                        </small>
                                                 </div>
 
                                                 <!-- button -->
@@ -269,5 +342,6 @@
                                 </div>
                         </div>
                 </div>
+                <script src="../script.js"></script>
         </body>
 </html>
